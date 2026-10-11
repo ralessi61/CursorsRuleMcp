@@ -65,3 +65,4 @@ e imposta la variabile nella shell (`export GITHUB_PERSONAL_ACCESS_TOKEN=...`) p
 ## Esempi nel repo
 - Radice: `.cursor/mcp.json` (GitHub + Postgres)
 - Server personalizzato: [examples/mcp-server-custom](../examples/mcp-server-custom/README.md)
+- Stesso server in Python (FastMCP): [examples/mcp-server-python](../examples/mcp-server-python/README.md)

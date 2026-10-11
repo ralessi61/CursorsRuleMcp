@@ -11,6 +11,7 @@ Indice dei materiali aggiunti per il corso di *Agentic AI*.
 ## Esempi pratici
 - [examples/rules-avanzate](../examples/rules-avanzate/README.md) – i quattro tipi di regole `.mdc`
 - [examples/mcp-server-custom](../examples/mcp-server-custom/README.md) – un server MCP in TypeScript (`cerca_documenti`)
+- [examples/mcp-server-python](../examples/mcp-server-python/README.md) – lo stesso server MCP in Python (FastMCP)
 - [examples/paradigmi-agentici](../examples/paradigmi-agentici/README.md) – ReAct, Plan and Execute, Reflection con LLM simulato
 - [examples/rag-documenti-aziendali](../examples/rag-documenti-aziendali/README.md) – regola + MCP per risposte con citazioni
 
