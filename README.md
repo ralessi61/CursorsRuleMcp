@@ -12,3 +12,10 @@
 - `.cursor/rules/tests.mdc` - applies only to `*.test.ts`
 - `.cursor/rules/database.mdc` - rule that tells the AI when to use the postgres MCP tool
 - `.cursor/mcp.json` - MCP server config
+
+## Note: temporary GitHub token
+This repo was pushed using a temporary fine-grained GitHub personal access token
+(scoped to this repository only, Contents: read and write, short expiry).
+The token is intentionally NOT stored in this repo. Revoke it at
+https://github.com/settings/personal-access-tokens once it is no longer needed.
+Never commit tokens; for MCP use the `GITHUB_PERSONAL_ACCESS_TOKEN` environment variable.
