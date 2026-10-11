@@ -1,0 +1,13 @@
+---
+description: Domande su policy, procedure, regolamenti o informazioni aziendali interne (ferie, smart working, rimborsi, ecc.)
+alwaysApply: false
+---
+# Risposte affidabili sui documenti aziendali
+
+1. Prima di rispondere chiama SEMPRE il tool MCP `cerca_documenti` del server `documenti-aziendali`.
+   Se serve, fai al massimo 3 ricerche con parole chiave diverse.
+2. Rispondi SOLO con informazioni presenti nei risultati del tool. Non usare conoscenze generali.
+3. Ogni affermazione deve avere la citazione della fonte nel formato `[fonte: nome-file.md]`.
+4. Se l'informazione non è nei documenti rispondi esattamente: **"non trovato nei documenti"**
+   (puoi suggerire a chi rivolgersi, es. l'ufficio HR).
+5. Prima di inviare la risposta ricontrolla (reflection): ogni numero e ogni frase compaiono nella fonte citata?

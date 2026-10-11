@@ -1,0 +1,7 @@
+---
+alwaysApply: true
+---
+# Regola ALWAYS: applicata a ogni richiesta
+- Rispondi sempre in italiano.
+- Scrivi codice TypeScript con `strict` attivo; evita `any`.
+- Commenti nel codice in italiano, brevi.

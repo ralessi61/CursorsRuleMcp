@@ -1,0 +1,9 @@
+---
+globs: src/components/**/*.tsx
+alwaysApply: false
+---
+# Regola AUTO ATTACHED: si attiva solo per i componenti React
+- Usa componenti funzionali, mai classi.
+- Le props vanno tipizzate con un'interfaccia `NomeComponenteProps`.
+- Un componente per file; nome file = nome componente (PascalCase).
+- Niente stili inline: usa classi CSS.
