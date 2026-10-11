@@ -21,6 +21,7 @@ just to start them. The project code itself is pure Python. A custom MCP server 
 - `.cursor/rules/database.mdc` - rule that tells the AI when to use the postgres MCP tool
 - `.cursor/mcp.json` - MCP server config
 - `docs/` and `examples/` - extended Italian docs and examples
+- `docs/MANUALE.md` - step-by-step user manual (Italian) for all examples
 
 ## Note: temporary GitHub token
 This repo was pushed using a temporary fine-grained GitHub personal access token

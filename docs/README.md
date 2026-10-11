@@ -2,6 +2,8 @@
 
 Indice dei materiali aggiunti per il corso di *Agentic AI*.
 
+- 📘 [Manuale d'uso passo passo](MANUALE.md) – come eseguire tutti gli esempi
+
 ## Guide
 1. [Cursor Rules](01-cursor-rules.md) – cosa sono, i tipi, esempi
 2. [MCP – Model Context Protocol](02-mcp.md) – client/server, tool, configurazione
