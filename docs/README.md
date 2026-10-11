@@ -14,6 +14,6 @@ Indice dei materiali aggiunti per il corso di *Agentic AI*.
 - [examples/paradigmi-agentici](../examples/paradigmi-agentici/README.md) – ReAct, Plan and Execute, Reflection con LLM simulato (Python, solo libreria standard)
 - [examples/rag-documenti-aziendali](../examples/rag-documenti-aziendali/README.md) – regola + MCP per risposte con citazioni
 
-## Esempi già presenti nella radice del repo (esempio originale in TypeScript)
+## Esempi già presenti nella radice del repo
 - `.cursor/rules/*.mdc` – regole di base (stile, test, database)
 - `.cursor/mcp.json` – configurazione MCP con server GitHub e Postgres

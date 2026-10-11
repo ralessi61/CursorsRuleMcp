@@ -74,5 +74,5 @@ Uso: procedure occasionali. Nel prompt scrivi: `@release-checklist prepara la re
 - Versiona `.cursor/rules` con git: le regole sono parte del progetto.
 
 ## Esempi nel repo
-- Radice (esempio originale in TypeScript): `.cursor/rules/style.mdc`, `tests.mdc`, `database.mdc`
+- Radice: `.cursor/rules/style.mdc`, `tests.mdc`, `database.mdc`
 - Esempi estesi: [examples/rules-avanzate](../examples/rules-avanzate/README.md)

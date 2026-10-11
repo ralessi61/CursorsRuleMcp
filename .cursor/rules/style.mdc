@@ -2,6 +2,7 @@
 description: Team coding style
 alwaysApply: true
 ---
-- Use TypeScript, never plain JavaScript.
-- Prefer async/await over .then().
+- Use Python 3.10+ with type hints on all function parameters and return values.
+- Follow PEP 8 (snake_case functions, 4-space indent).
+- Use async/await for I/O; wrap blocking calls with asyncio.to_thread.
 - Write comments in English.

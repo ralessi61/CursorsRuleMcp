@@ -1,8 +1,9 @@
 ---
 description: How we write tests
-globs: ["**/*.test.ts"]
+globs: ["tests/**/*.py", "**/test_*.py"]
 alwaysApply: false
 ---
-- Use Vitest, not Jest.
-- One describe block per function.
-- Always test the error case.
+- Use pytest, not unittest.TestCase.
+- One test function per behaviour, named test_<function>_<case>.
+- Always test the error case with pytest.raises.
+- Mock network calls; tests must run offline.
