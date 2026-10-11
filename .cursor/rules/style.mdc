@@ -1,0 +1,7 @@
+---
+description: Team coding style
+alwaysApply: true
+---
+- Use TypeScript, never plain JavaScript.
+- Prefer async/await over .then().
+- Write comments in English.

@@ -1,0 +1,8 @@
+---
+description: How we write tests
+globs: ["**/*.test.ts"]
+alwaysApply: false
+---
+- Use Vitest, not Jest.
+- One describe block per function.
+- Always test the error case.

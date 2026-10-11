@@ -1,0 +1,6 @@
+---
+description: Database safety
+alwaysApply: true
+---
+- Before changing the database schema, inspect current tables with the postgres MCP tool.
+- Never run DELETE or DROP without asking first.
