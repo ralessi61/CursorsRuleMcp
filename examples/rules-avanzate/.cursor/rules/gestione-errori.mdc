@@ -3,6 +3,6 @@ description: Linee guida per gestione degli errori, eccezioni e logging nel codi
 alwaysApply: false
 ---
 # Regola AGENT REQUESTED: l'agente la carica se la description è pertinente
-- Non ignorare mai un errore con un `catch` vuoto.
-- Crea classi di errore specifiche (es. `class NotFoundError extends Error`).
+- Non ignorare mai un errore con un ``except: pass` (o `except Exception` generico).
+- Crea classi di errore specifiche (es. `class DocumentoNonTrovatoError(Exception)`).
 - Logga il contesto (id, operazione), mai dati sensibili (password, token).

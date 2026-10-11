@@ -8,14 +8,14 @@ Si salvano in `.cursor/rules/*.mdc` (nella **radice** del workspace). Ogni file 
 ```markdown
 ---
 description: Convenzioni per le query SQL
-globs: src/db/**/*.ts
+globs: app/db/**/*.py
 alwaysApply: false
 ---
 - Usa sempre query parametrizzate, mai concatenazione di stringhe.
 ```
 
 ## Quali problemi risolvono
-- **Ripetizione**: non devi riscrivere "usa TypeScript strict, niente `any`" in ogni chat.
+- **Ripetizione**: non devi riscrivere "usa Python con type hint, segui PEP 8" in ogni chat.
 - **Incoerenza**: tutto il team (e l'AI) segue le stesse convenzioni.
 - **Contesto mancante**: l'AI non conosce architettura, librerie scelte, regole di sicurezza: le regole gliele dicono.
 - **Spreco di contesto**: con glob e description le regole si caricano solo quando servono.
@@ -34,19 +34,19 @@ alwaysApply: false
 ---
 alwaysApply: true
 ---
-Rispondi in italiano. Codice in TypeScript strict.
+Rispondi in italiano. Codice Python 3.10+ con type hint.
 ```
 Uso: convenzioni generali, brevi. Attenzione: costano token in *ogni* richiesta.
 
 ### 2. Auto Attached (globs)
 ```markdown
 ---
-globs: src/components/**/*.tsx
+globs: tests/**/*.py
 alwaysApply: false
 ---
-Componenti React funzionali, props tipizzate con un'interfaccia `XxxProps`.
+Test con pytest: funzioni `test_...`, `@pytest.mark.parametrize` per più casi.
 ```
-Uso: regole specifiche per una parte del codice (componenti, test, migrazioni).
+Uso: regole specifiche per una parte del codice (test, modelli, migrazioni).
 
 ### 3. Agent Requested (description)
 ```markdown
@@ -74,5 +74,5 @@ Uso: procedure occasionali. Nel prompt scrivi: `@release-checklist prepara la re
 - Versiona `.cursor/rules` con git: le regole sono parte del progetto.
 
 ## Esempi nel repo
-- Radice: `.cursor/rules/style.mdc`, `tests.mdc`, `database.mdc`
+- Radice (esempio originale in TypeScript): `.cursor/rules/style.mdc`, `tests.mdc`, `database.mdc`
 - Esempi estesi: [examples/rules-avanzate](../examples/rules-avanzate/README.md)

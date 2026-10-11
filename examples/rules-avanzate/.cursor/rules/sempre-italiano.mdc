@@ -3,5 +3,5 @@ alwaysApply: true
 ---
 # Regola ALWAYS: applicata a ogni richiesta
 - Rispondi sempre in italiano.
-- Scrivi codice TypeScript con `strict` attivo; evita `any`.
-- Commenti nel codice in italiano, brevi.
+- Scrivi codice Python 3.10+ con type hint su parametri e valori di ritorno.
+- Segui PEP 8; docstring e commenti brevi, in italiano.

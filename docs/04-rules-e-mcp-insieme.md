@@ -23,7 +23,7 @@ alwaysApply: false
 ### Limitare l'uso di un tool rischioso
 ```markdown
 ---
-globs: src/db/**
+globs: app/db/**/*.py
 alwaysApply: false
 ---
 - Con il server MCP `postgres` esegui solo query SELECT.
@@ -39,4 +39,4 @@ Quando usi informazioni ottenute da un tool MCP, indica la fonte tra parentesi q
 ```
 
 ## Come provarlo
-Vedi [examples/rag-documenti-aziendali](../examples/rag-documenti-aziendali/README.md): una regola + la configurazione del server MCP [mcp-server-custom](../examples/mcp-server-custom/README.md).
+Vedi [examples/rag-documenti-aziendali](../examples/rag-documenti-aziendali/README.md): una regola + la configurazione del server MCP [mcp-server-python](../examples/mcp-server-python/README.md).

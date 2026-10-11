@@ -1,0 +1,9 @@
+---
+globs: tests/**/*.py
+alwaysApply: false
+---
+# Regola AUTO ATTACHED: si attiva solo per i file di test
+- Usa pytest con semplici funzioni `test_...`, niente classi `unittest.TestCase`.
+- Un comportamento per test; nome descrittivo (`test_sconto_non_negativo`).
+- Usa `@pytest.mark.parametrize` per più casi dello stesso test.
+- Usa `pytest.raises` per verificare le eccezioni.

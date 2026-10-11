@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "documenti-aziendali": {
-      "command": "node",
-      "args": ["dist/server.js"]
-    }
-  }
-}

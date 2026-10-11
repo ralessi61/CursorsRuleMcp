@@ -3,7 +3,7 @@ alwaysApply: false
 ---
 # Regola MANUAL: si usa solo citandola con @checklist-release
 Quando ti viene chiesto di preparare una release:
-1. Verifica che i test passino (`npm test`).
-2. Aggiorna la versione in `package.json` (semver).
+1. Verifica che i test passino (`pytest`).
+2. Aggiorna la versione in `pyproject.toml` (semver).
 3. Scrivi le note di rilascio nel CHANGELOG.
 4. Proponi il comando `git tag vX.Y.Z` ma NON eseguirlo.

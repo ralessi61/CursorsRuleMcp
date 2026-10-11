@@ -35,8 +35,8 @@ Esempio (server locale via stdio):
 {
   "mcpServers": {
     "documenti": {
-      "command": "npx",
-      "args": ["tsx", "examples/mcp-server-custom/src/server.ts"]
+      "command": "examples/mcp-server-python/.venv/bin/python",
+      "args": ["examples/mcp-server-python/server.py"]
     }
   }
 }
@@ -47,15 +47,20 @@ Non scrivere mai token nel file (finirebbero su git). Usa l'interpolazione:
 ```json
 {
   "mcpServers": {
-    "github": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-github"],
-      "env": { "GITHUB_PERSONAL_ACCESS_TOKEN": "${env:GITHUB_PERSONAL_ACCESS_TOKEN}" }
+    "mio-server": {
+      "command": ".venv/bin/python",
+      "args": ["server.py"],
+      "env": { "API_KEY": "${env:API_KEY}" }
     }
   }
 }
 ```
-e imposta la variabile nella shell (`export GITHUB_PERSONAL_ACCESS_TOKEN=...`) prima di avviare Cursor.
+e imposta la variabile nella shell (`export API_KEY=...`) prima di avviare Cursor. Nel codice Python del server la leggi con:
+```python
+import os
+api_key = os.environ["API_KEY"]  # mai scritta nel codice
+```
+(Lo stesso schema è usato per il server GitHub nel `.cursor/mcp.json` della radice.)
 
 ## Esempi d'uso (prompt in Cursor)
 - "Elenca le issue aperte con label bug" → tool del server GitHub.
@@ -63,6 +68,5 @@ e imposta la variabile nella shell (`export GITHUB_PERSONAL_ACCESS_TOKEN=...`) p
 - "Cerca nei documenti la policy sulle ferie" → tool `cerca_documenti` del nostro server custom.
 
 ## Esempi nel repo
-- Radice: `.cursor/mcp.json` (GitHub + Postgres)
-- Server personalizzato: [examples/mcp-server-custom](../examples/mcp-server-custom/README.md)
-- Stesso server in Python (FastMCP): [examples/mcp-server-python](../examples/mcp-server-python/README.md)
+- Radice: `.cursor/mcp.json` (GitHub + Postgres; questi server ufficiali si avviano con `npx`, quindi richiedono Node.js)
+- Server personalizzato in Python (FastMCP): [examples/mcp-server-python](../examples/mcp-server-python/README.md)
